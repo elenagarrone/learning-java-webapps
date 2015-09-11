@@ -14,6 +14,9 @@ public class App {
 		
 		Person person = (Person) context.getBean("person"); // I pass the id of the bean as argument of getBean and then I have to cast it to the correct object.
 		person.speak();
+		
+		// To close the context:
+		((FileSystemXmlApplicationContext)context).close();
 	
 	}
 
