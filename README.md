@@ -13,3 +13,4 @@ Following the tutorial by John Purcell on [Cave of Programming](http://courses.c
 ###The Java Spring Tutorial:
 
 1. [Spring: "Hello World"](https://github.com/elenagarrone/learning-java-webapps/tree/master/Spring%20-%20Hello%20World)
+2. [Class Path Contexts](https://github.com/elenagarrone/learning-java-webapps/tree/master/Class%20Path%20Contexts)
