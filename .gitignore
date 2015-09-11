@@ -5,4 +5,7 @@ Servers
 */build
 .classpath
 .project
-WebContent/META-INF/MANIFEST.MF
+/WebContent/META-INF/
+/WebContent/META-INF/MANIFEST.MF
+.DS_Store
+*/.DS_Store
