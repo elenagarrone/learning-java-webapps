@@ -9,3 +9,4 @@ Servers
 /WebContent/META-INF/MANIFEST.MF
 .DS_Store
 */.DS_Store
+LocalDeployment.war
