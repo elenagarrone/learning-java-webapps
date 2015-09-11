@@ -1,4 +1,4 @@
-#Learning Java
+#Learn Web Applications With Java
 
 Following the tutorial by John Purcell on [Cave of Programming](http://courses.caveofprogramming.com/courses/java-for-complete-beginners):
 
