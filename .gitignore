@@ -5,4 +5,4 @@ Servers
 */build
 .classpath
 .project
-WebContent/META-INF
+WebContent/META-INF/MANIFEST.MF
