@@ -10,3 +10,4 @@ Servers
 .DS_Store
 */.DS_Store
 LocalDeployment.war
+*.springBeans
