@@ -5,3 +5,4 @@ Servers
 */build
 .classpath
 .project
+WebContent/META-INF
