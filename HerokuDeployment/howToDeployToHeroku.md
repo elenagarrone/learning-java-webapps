@@ -8,13 +8,14 @@
 
 ####In the Terminal:
 
-First of all make sure you have the `Heroku Toolbelt` installed:
+First of all make sure you have the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed and then run:
 
 ```shell
   $ heroku plugins:install https://github.com/heroku/heroku-deploy
 ```
+to install the plugin for deploying WAR files.
 
-then login to heroku:
+Login to heroku:
 ```shell
   $ heroku login
   # Enter your Heroku credentials.
