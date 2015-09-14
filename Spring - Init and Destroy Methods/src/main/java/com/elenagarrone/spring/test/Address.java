@@ -1,0 +1,24 @@
+package com.elenagarrone.spring.test;
+
+public class Address {
+	private String street;
+	private String postcode;
+	
+	public Address(String street, String postcode) {
+		super();
+		this.street = street;
+		this.postcode = postcode;
+	}
+	
+	// The defaults are going to run only if they are defined in the class.
+	public void init() {
+		System.out.println("Bean created: " + this);
+	}
+
+	@Override
+	public String toString() {
+		return "Address [street=" + street + ", postcode=" + postcode + "]";
+	}
+	
+	
+}
