@@ -5,13 +5,18 @@
 
 
 	<bean id="person" class="com.elenagarrone.spring.test.Person">
-		<!-- Created by going in the beans tab -->
 		<constructor-arg value="777" name="id"></constructor-arg>
 		<constructor-arg value="Mary" name="name"></constructor-arg>
 		
 		<property name="taxId">
 			<value>321</value>
 		</property>
-		
+		<property name="address" ref="address"></property>
+	</bean>
+
+
+	<bean id="address" class="com.elenagarrone.spring.test.Address">
+		<constructor-arg value="1 Church Lane" name="street"></constructor-arg>
+		<constructor-arg name="postcode" value="9876"></constructor-arg>
 	</bean>
 </beans>
