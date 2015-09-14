@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="person" class="com.elenagarrone.spring.test.Person">
+		<!-- Created by going in the beans tab -->
+		<constructor-arg value="777" name="id"></constructor-arg>
+		<constructor-arg value="Mary" name="name"></constructor-arg>
+		
+		<!-- Property can be written using the interface and inputting the value: 
+		
+		<property name="taxId" value="123"></property>
+		
+		or by adding a tag value: -->
+		
+		<property name="taxId">
+			<value>321</value>
+		</property>
+		
+	</bean>
+</beans>
