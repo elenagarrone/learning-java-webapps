@@ -17,3 +17,4 @@ Following the tutorial by John Purcell on [Cave of Programming](http://courses.c
 3. [Constructor Arguments](https://github.com/elenagarrone/learning-java-webapps/tree/master/Spring%20-%20Constructor%20Arguments)
 4. [Setting Bean Properties](https://github.com/elenagarrone/learning-java-webapps/tree/master/Spring%20-%20Setting%20Bean%20Properties)
 5. [Dependency Injection](https://github.com/elenagarrone/learning-java-webapps/tree/master/Spring%20-%20Dependency%20Injection)
+6. [Bean Scope](https://github.com/elenagarrone/learning-java-webapps/tree/master/Spring%20-%20Bean%20Scope)
