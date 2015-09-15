@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
-	default-init-method="init" default-destroy-method="destroy">
-
+	default-init-method="init" default-destroy-method="destroy"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- The 'xmlns:p' above is added after clicking on the Namespace tab and adding the P. -->
+	
 	<bean id="person" class="com.elenagarrone.spring.test.Person"
 		scope="singleton" init-method="onCreate" destroy-method="onDestroy"
 		factory-method="getInstance">
@@ -15,24 +17,16 @@
 		</property>
 		<property name="address" ref="address"></property>
 	</bean>
-	
-	<bean id="person2" class="com.elenagarrone.spring.test.Person"
-		scope="singleton" init-method="onCreate" destroy-method="onDestroy"
-		factory-method="createPerson" factory-bean="personfactory">
-		<constructor-arg value="654" name="id"></constructor-arg>
-		<constructor-arg value="Mike" name="name"></constructor-arg>
-		
-		<property name="taxId">
-			<value>321</value>
-		</property>
-		<property name="address" ref="address"></property>
-	</bean>
-
 
 	<bean id="address" class="com.elenagarrone.spring.test.Address">
 		<constructor-arg value="1 Church Lane" name="street"></constructor-arg>
 		<constructor-arg name="postcode" value="9876"></constructor-arg>
 	</bean>
+	
+	<!-- Now I could use the <property> tag to set the properties of the bean, but another way of doing this is with the P namespace in the tag. Obviously I have to add the setter methods to the address. -->
+	<bean id="address2" class="com.elenagarrone.spring.test.Address" p:street="23 Vinyard Lane" p:postcode="">
+	</bean>
+	
 	<bean id="personfactory"
 		class="com.elenagarrone.spring.test.PersonFactory">
 	</bean>

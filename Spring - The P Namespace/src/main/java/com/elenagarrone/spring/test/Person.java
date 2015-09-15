@@ -11,7 +11,6 @@ public class Person {
 	
 	public Person() {};
 	
-	// To get the constructor arguments to work I need to allow my factory-method to take the right arguments:
 	public static Person getInstance(int id, String name) {
 		System.out.println("Creating person using factory method.");
 		return new Person(id, name);
@@ -27,7 +26,7 @@ public class Person {
 	}
 	
 	public void onDestroy() {
-		System.out.println("Person destroyed.");
+		System.out.println("Person destroied.");
 	}
 
 	public void speak() {
