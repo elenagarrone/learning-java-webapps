@@ -3,29 +3,33 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean class="com.elenagarrone.spring.test.Animal">
+	<bean id="elephant" class="com.elenagarrone.spring.test.Animal">
 		<property name="name" value="Richard"></property>
 		<property name="type" value="elephant"></property>
 	</bean>
-	<bean class="com.elenagarrone.spring.test.Animal">
+	<bean id="lion" class="com.elenagarrone.spring.test.Animal">
 		<property name="name" value="Igor"></property>
 		<property name="type" value="lion"></property>
 	</bean>
-	<bean class="com.elenagarrone.spring.test.Animal">
+	<bean id="snake" class="com.elenagarrone.spring.test.Animal">
 		<property name="name" value="Bob"></property>
 		<property name="type" value="snake"></property>
 	</bean>
 
-	<!-- We are going to set the property of a map where the key and value are 
-		set to strings. -->
 	<bean id="jungle" class="com.elenagarrone.spring.test.Jungle">
-
 		<property name="foods">
 			<props>
 				<prop key="gorilla">banana</prop>
 				<prop key="panda">bamboo</prop>
 				<prop key="snake">eggs</prop>
 			</props>
+		</property>
+		<property name="animals">
+			<map>
+				<entry key="lion" value-ref="lion"></entry>
+				<entry key="elephant" value-ref="elephant"></entry>
+				<entry key="snake" value-ref="snake"></entry>
+			</map>
 		</property>
 	</bean>
 
