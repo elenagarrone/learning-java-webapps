@@ -23,3 +23,6 @@ Following the tutorial by John Purcell on [Cave of Programming](http://courses.c
 9. [The P Namespace](https://github.com/elenagarrone/learning-java-webapps/tree/master/Spring%20-%20The%20P%20Namespace)
 10. [Setting List Properties](https://github.com/elenagarrone/learning-java-webapps/tree/master/Spring%20-%20Setting%20List%20Properties)
 11. [Lists of Beans](https://github.com/elenagarrone/learning-java-webapps/tree/master/Spring%20-%20Lists%20of%20Beans)
+12. [Inner Beans](https://github.com/elenagarrone/learning-java-webapps/tree/master/Spring%20-%20Inner%20Beans)
+13. [Property Maps](https://github.com/elenagarrone/learning-java-webapps/tree/master/Spring%20-%20Property%20Maps)
+14. [Arbitrary Maps as Bean Properties](https://github.com/elenagarrone/learning-java-webapps/tree/master/Spring%20-%20Arbitrary%20Maps%20as%20Bean%20Properties)
