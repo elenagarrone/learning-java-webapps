@@ -5,29 +5,29 @@
 
 
 	<bean id="jungle" class="com.elenagarrone.spring.test.Jungle">
-		<property name="largest">
-			<!-- A bean defined as inner bean is scoped inside of the main bean so 
-				I can't use it outside. -->
-			<bean class="com.elenagarrone.spring.test.Animal">
-				<property name="name" value="Richard"></property>
-				<property name="type" value="elephant"></property>
-			</bean>
-		</property>
-
-		<property name="animals">
-			<list>
-			<!-- The ids are not terribly useful since we cannot refer to inner beans. -->
-				<bean class="com.elenagarrone.spring.test.Animal">
-					<property name="name" value="Igor"></property>
-					<property name="type" value="lion"></property>
-				</bean>
-
-				<bean class="com.elenagarrone.spring.test.Animal">
-					<property name="name" value="Bob"></property>
-					<property name="type" value="snake"></property>
-				</bean>
-			</list>
-		</property>
+	<property name="foods">
+		<props>
+			<prop key="gorilla">banana</prop>
+			<prop key="panda">bamboo</prop>
+			<prop key="snake">eggs</prop>
+		</props>
+	</property>
 	</bean>
+
+	<bean class="com.elenagarrone.spring.test.Animal">
+		<property name="name" value="Richard"></property>
+		<property name="type" value="elephant"></property>
+	</bean>
+
+	<bean class="com.elenagarrone.spring.test.Animal">
+		<property name="name" value="Igor"></property>
+		<property name="type" value="lion"></property>
+	</bean>
+
+	<bean class="com.elenagarrone.spring.test.Animal">
+		<property name="name" value="Bob"></property>
+		<property name="type" value="snake"></property>
+	</bean>
+
 
 </beans>
