@@ -21,3 +21,4 @@ Following the tutorial by John Purcell on [Cave of Programming](http://courses.c
 7. [Init and Destroy Methods](https://github.com/elenagarrone/learning-java-webapps/tree/master/Spring%20-%20Init%20and%20Destroy%20Methods)
 8. [Factory Beans and Methods](https://github.com/elenagarrone/learning-java-webapps/tree/master/Spring%20-%20Factory%20Beans%20and%20Methods)
 9. [The P Namespace](https://github.com/elenagarrone/learning-java-webapps/tree/master/Spring%20-%20The%20P%20Namespace)
+10. [Setting List Properties](https://github.com/elenagarrone/learning-java-webapps/tree/master/Spring%20-%20Setting%20List%20Properties)
